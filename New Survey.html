@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="new survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        
+        
+        <h4 id="description">Fill up the form for us to know how satisfied you are with our services.</h4>
+    </header>
+        <section>
+
+        <form action="" method="GET" class="form" id="form">
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="name" id="name-label">*Name:</label>
+                </div>
+                <div class="rightSide">
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="email" id="email-label">*Email:</label>
+                </div>
+                <div class="rightSide">
+                    <div class="input">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="days" id="number-label">*Days Spent:</label>
+                </div>
+                <div class="rightSide">
+                    <input type="number" name="number" id="number" min="1" max="31" placeholder="How many days?">
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="status" id="status-label">What is your Employment Status?</label>
+                </div>
+
+                <div class="rightSide">
+                    <select name="status" class="dropdown">
+                        <option value="employee">Employee</option>
+                        <option value="unemployed">UnEmployed</option>
+                        <option value="employed">Employed</option>
+                        <option value="selfemployed">Self-Employed</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="character" class="character-label">Out of the following list of attributes, which do you
+                        feel the customer service employee possessed? <br>
+                        *(Please select all that apply)</label>
+                </div>
+
+                <div class="rightSide">
+                    <div style="list-style: none" class="characterList">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Patience" class="character">
+                                Patience</label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Enthusiasm" class="character">
+                                Enthusiasm</label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Knowledgeable" class="character">
+                                Knowledgeable</label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Responsive" class="character">
+                                Responsive</label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Friendliness" class="character">
+                                Friendliness</label>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="radio">Would you like to take this survey again in future?</label>
+                </div>
+
+
+                <div class="rightSide">
+                    <div class="radioList" style="list-style: none">
+
+                        <li>
+                            <label><input type="radio" class="radio" name="radio" id="yes"> Yes</label>
+                        </li>
+
+                        <li>
+                            <label><input type="radio" name="radio" class="radio" id="no"> No</label>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftSide">
+                <div class="labels">
+                    <label for="feedback">Do you have any additional comments or feedback for us?</label>
+                </div>
+
+
+                <div class="rightSide">
+                    <textarea placeholder="Your feedback means so much to us." name="feedback" id="feedback" cols="39"
+                        rows="5"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script src="new survey.js"></script>
+</body>
+
+</html>
