@@ -61,20 +61,20 @@ li {
 }
 
 input[name='name'],
-input[name='number'] {
-    width: 300px;
-    box-shadow: none;
+input[name='number'],
+input[name="email"]{
     font-size: 15px;
-    height: 30px;
-    padding-left: 10px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    width: 200px;
+    padding: 5px;
 }
 
-input[name='email'] {
+input[name='name']:hover,
+input[name='number']:hover,
+input[name="email"]:hover{
+    font-size: 17px;
+}
+
+/* input[name='email'] {
     height: 30px;
     font-size: 15px;
     width: 250px;
@@ -84,20 +84,15 @@ input[name='email'] {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-}
+} */
 
 select {
-    border-radius: 3px;
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 300px;
+    width: 200px;
     height: 30px;
-    margin: auto 0;
-    padding-left: 10px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    /*margin: auto 0;
+    */padding: 5px;
 }
 
 button[type='submit'] {
@@ -111,11 +106,13 @@ button[type='submit'] {
 }
 
 button[type='submit']:hover {
-    background-color: #76aeed;
+    background-color: #005ac2;
 }
 
 button[type='submit']:active {
     background-color: #407fc7;
+    position: relative;
+    top: 3;
 }
 
 textarea {
@@ -124,6 +121,6 @@ textarea {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 5px;
     resize: none;
 }
